@@ -1,4 +1,4 @@
-## :car: Challenge IA sur les véhicules électriques et infrastructures de recharge 
+## 🚙 Challenge IA sur les véhicules électriques et infrastructures de recharge  
 Challenge IA proposé par Latitudes.
 
 ## :pencil2: Auteurs
