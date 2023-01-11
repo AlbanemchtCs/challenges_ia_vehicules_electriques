@@ -6,7 +6,7 @@ Created on Wed Jan 11 09:23:14 2023
 """
 
 import pandas as pd
-
+import matplotlib.pyplot as plt
 def f(x):
     
     if x == 'rural autonome très peu dense':
@@ -25,11 +25,17 @@ def f(x):
 
 Rural = pd.read_csv('C:/Users/Admin/Downloads/CSV_ruralité.csv',sep=';')
 Population = pd.read_csv('C:/Users/Admin/Downloads/CSV_Pop.csv',sep=';',dtype={'codgeo' : str})
+Centroide = pd.read_csv('C:/Users/Admin/Downloads/GEO_TER_ADE_centroide_communes_france.csv',sep=';',dtype={'insee_com' : str}).rename(columns = {'insee_com' : 'codgeo',
+                                                                                                                                'X_COORD' : 'latitude',
+                                                                                                                                'Y_COORD' : 'longitude'})[['codgeo','latitude','longitude']]
+
 Population = Population[Population['an']== 2018].rename(columns = {'p_pop' : 'population'})
 Rural = Rural.rename(columns = {'Code géographique communal' : 'codgeo'})
 Tot = pd.merge(Population,Rural,on='codgeo').drop(columns = 'an')
+Tot = Tot.merge(Centroide,on='codgeo')
 
 Tot['rurality'] = Tot['Typologie urbain/rural'].apply(f)
 
 Result = Tot.drop(columns=['Typologie urbain/rural','libgeo']).dropna().astype({'population' : int})
 
+#plt.hist(Result[Result['population'] < 1000]['population'],bins=30)
