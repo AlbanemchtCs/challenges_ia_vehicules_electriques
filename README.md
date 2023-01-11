@@ -1,4 +1,4 @@
-## 🚙 Challenge IA sur les véhicules électriques et infrastructures de recharge  
+# 🚙 Challenge IA sur les véhicules électriques et infrastructures de recharge  
 Challenge IA proposé par [Latitudes](https://latitudes.notion.site/Pr-sentation-des-projets-de-l-Open-Data-University-5abab2bb9a6e453d817fe6bdf3806413), dans le cadre de l’Open Data University.
 
 ## :page_facing_up: Description
@@ -7,6 +7,22 @@ En lien avec la loi d’orientation des mobilités en France, qui fixe comme obj
 Pour que le modèle du véhicule électrique soit viable, il est nécessaire de disposer d’une borne de recharge publique pour 10 voitures (Directive AFI). La France a largement dépassé ces préconisations. Néanmoins, le développement de la mobilité électrique doit passer par une adéquation des infrastructures de recharge aux besoins des usagers.
 
 L'objectif de ce projet est de prédire le nombre de véhicules électriques en France selon la ruralité, pour 2023. Cela nous permettra d'en déduire par la suite le nombre de bornes de recharge.
+
+## :card_index_dividers: Segmentation
+Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un fichier .gitinore et un fichier texte pour les requirements :
+
+```bash 
+.
+├── README.md
+├── CONTRIBUTING.md
+├── .gitignore
+└── requirements.txt
+```
+
+- ``README.md`` contient l'ensemble des informations sur le projet pour pouvoir l'installer.
+- ``CONTRIBUTING.md`` contient l'ensemble des informations sur les normes et les pratiques de collaboration et de gestion du projet.
+- ``.gitignore`` contient les fichiers qui doivent être ignorés lors de l'ajout de fichiers au dépôt Git.
+- ``requirements.txt`` contient la liste des modules et des bibliothèques Python qui doivent être installés, ainsi que leur version spécifique.
 
 ## :pencil2: Auteurs
 - HAMDI Ilyes  
