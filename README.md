@@ -21,16 +21,14 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
     ├── cluster_drawing.ipynb
     ├── clustering.py
     └── rurality_pop.py
+    
 ```
 
 - ``README.md`` contient l'ensemble des informations sur le projet pour pouvoir l'installer.
 - ``CONTRIBUTING.md`` contient l'ensemble des informations sur les normes et les pratiques de collaboration et de gestion du projet.
 - ``.gitignore`` contient les fichiers qui doivent être ignorés lors de l'ajout de fichiers au dépôt Git.
 - ``requirements.txt`` contient la liste des modules et des bibliothèques Python qui doivent être installés, ainsi que leur version spécifique.
-- ``cluster`` est le dossier pour implémenter les clusters. Il comprend deux fichiers python et un notebook. 
-        - ``cluster_drawing.ipynb`` est le notebook python qui permet de visualiser les clusters.
-        - ``clustering.py`` permet de créer les clusters autour des données.
-        - ``rurality_pop.py`` permet d'agglomérer les bases de données.
+- ``cluster`` est le dossier pour implémenter les clusters. Il comprend deux fichiers python et un notebook : ``cluster_drawing.ipynb`` est le notebook python qui permet de visualiser les clusters, ``clustering.py`` permet de créer les clusters autour des données et ``rurality_pop.py`` permet d'agglomérer les bases de données.
 
 ## :pencil2: Auteurs
 - HAMDI Ilyes  
