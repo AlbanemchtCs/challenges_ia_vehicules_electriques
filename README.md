@@ -23,7 +23,7 @@ L’objectif général du projet et les impacts recherchés sont :
 ## 🤔 Choix techniques
 Notre objectif initial de ce projet était de prédire le nombre de véhicules électriques en France par mois pour chaque commune pour 2023. Cela nous permettrait d'en déduire par la suite le nombre de bornes de recharge.
 
-Néanmoins, suite à un manque de données sur un grand nombre de nos variables cibles (bornes de recharge, les transports en commun, les voitures thermiques, les aides de l'état, les prix essence/électricité, l'orientation politique/sociale et les sorties de modèles électriques), nous décidons de faire une prédiction trimestrielle du nombre de véhicules électriques pour 2023 à partir de 40 clusters déterminés en fonction de la population, niveau de vie, position géographique et ruralité de chaque commune, des émissions de CO2 et du traffic routier. Cela nous permettra de prédire le nombre de bornes de recharge nécessaires :
+Néanmoins, suite à un manque de données sur un grand nombre de nos variables cibles (bornes de recharge, les transports en commun, les voitures thermiques, les aides de l'état, les prix essence/électricité, l'orientation politique/sociale et les sorties de modèles électriques), nous décidons de faire une prédiction trimestrielle du nombre de véhicules électriques pour 2023 à partir de 40 clusters (déterminés en fonction de la population, niveau de vie, position géographique et ruralité de chaque commune), des émissions de CO2 et du traffic routier. Cela nous permettra de prédire le nombre de bornes de recharge nécessaires :
 
 | Variable | Cluster : Population, ruralité et niveau de vie | Émissions de CO2 | Traffic routier |
 |---|---|---|---|
@@ -100,7 +100,7 @@ Exécuter ensuite les notebooks python dans l'ordre suivant :
 3. X.ipynb
 
 
-N'oubliez pas de bien changer le chemin d'accès aux données.
+N'oubliez pas de bien changer le chemin d'accès aux données !
 
 ## :pencil2: Auteurs
 - HAMDI Ilyes  
