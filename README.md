@@ -48,7 +48,8 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
         ├── FRANCE_COMMUNE_NIVEAU_DE_VIE-FIGARO.csv
         └── GEO_TER_ADE_centroide_communes_france.csv
 ├── data_analysis.ipynb
-├── x.ipynb
+├── voitures_par_commune.ipynb
+├── trend.ipynb
 └── cluster
     ├── cluster_drawing.ipynb
     ├── clustering.py
@@ -61,9 +62,13 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
 - ``requirements.txt`` contient la liste des modules et des bibliothèques Python qui doivent être installés, ainsi que leur version spécifique.
 - ``data`` contient l'ensemble des données utilisées.
 - ``data_analysis.ipynb`` est le notebook pour l'analyse des données.
+- ``voitures_par_commune.ipynb`` est le notebook pour générer le dataset des voitures électriques.
+- ``trend.ipynb`` est le notebook pour le modèle.
 - ``cluster`` est le dossier pour implémenter les clusters. Il comprend deux fichiers python et un notebook : ``rurality_pop.py`` permet d'agglomérer les bases de données,``clustering.py`` permet de créer les clusters autour des données et ``cluster_drawing.ipynb`` est le notebook python qui permet de visualiser les clusters.
 
 ## :wrench: Installation
+Avant de lancer le code, n'oubliez pas de bien changer le chemin d'accès aux données !
+
 Pour lancer le code, ouvrez dans un premier temps les fichiers python dans le fichier cluster :
 
 1. Tout d'abord, assurez-vous que vous avez installé une version `python` supérieure à 3.9. Nous vous conseillons un environnement conda avec la commande suivante : 
@@ -97,10 +102,10 @@ Exécuter ensuite les notebooks python dans l'ordre suivant :
 
 2. data_analysis.ipynb
 
-3. X.ipynb
+3. voitures_par_commune.ipynb
 
+4. trend.ipynb
 
-N'oubliez pas de bien changer le chemin d'accès aux données !
 
 ## :pencil2: Auteurs
 - HAMDI Ilyes  
