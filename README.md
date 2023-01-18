@@ -25,7 +25,7 @@ Notre objectif initial de ce projet était de prédire le nombre de véhicules �
 
 Néanmoins, suite à un manque de données sur un grand nombre de nos variables cibles (bornes de recharge, les transports en commun, les voitures thermiques, les aides de l'état, les prix essence/électricité, l'orientation politique/sociale et les sorties de modèles électriques), nous décidons de faire une prédiction trimestrielle du nombre de véhicules électriques pour 2023 à partir de 40 clusters déterminés en fonction de la population, niveau de vie, position géographique et ruralité de chaque commune, des émissions de CO2 et du traffic routier. Cela nous permettra de prédire le nombre de bornes de recharge nécessaires :
 
-| Variable |---| Cluster : Population, ruralité et niveau de vie | Émissions de CO2 | Traffic routier |
+| Variable | Cluster : Population, ruralité et niveau de vie | Émissions de CO2 | Traffic routier |
 |---|---|---|---|
 | Échelle temporelle | constant | année | année |
 | Échelle géographique | commune | national | département |
@@ -64,7 +64,7 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
 - ``cluster`` est le dossier pour implémenter les clusters. Il comprend deux fichiers python et un notebook : ``rurality_pop.py`` permet d'agglomérer les bases de données,``clustering.py`` permet de créer les clusters autour des données et ``cluster_drawing.ipynb`` est le notebook python qui permet de visualiser les clusters.
 
 ## :wrench: Installation
-Pour lancer les fichiers python :
+Pour lancer le code, ouvrez dans un premier temps les fichiers python dans le fichier cluster :
 
 1. Tout d'abord, assurez-vous que vous avez installé une version `python` supérieure à 3.9. Nous vous conseillons un environnement conda avec la commande suivante : 
 ```bash
@@ -84,10 +84,23 @@ cd challenges_ia_vehicules_electriques
 pip install -r requirements.txt
 ```
 
-3. Exécuter les fichiers python en utilisant la commande suivante :
+3. Exécuter les fichiers python du fichier cluster en utilisant les commandes suivantes :
 ```bash
+cd cluster
 python3 [nom du fichier]
 ```
+
+
+Exécuter ensuite les notebooks python dans l'ordre suivant : 
+
+1. cluster_drawing.ipynb
+
+2. data_analysis.ipynb
+
+3. X.ipynb
+
+
+N'oubliez pas de bien changer le chemin d'accès aux données.
 
 ## :pencil2: Auteurs
 - HAMDI Ilyes  
