@@ -31,7 +31,7 @@ plt.plot(L_inertia)
 kmeans = KMeans(n_clusters=40)
 kmeans.fit(inputs)
 data['cluster'] = kmeans.predict(inputs)
-
+data = data.drop(columns=['Unnamed: 0','LIBGEO'])
 #plt.scatter(data['longitude'],data['latitude'],c=data['cluster'])
 paris_cluster = int(data[data['codgeo']== '75056']['cluster'])
 
