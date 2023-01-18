@@ -27,8 +27,8 @@ Néanmoins, suite à un manque de données sur un grand nombre de nos variables 
 
 | Variable |---| Cluster : Population, ruralité et niveau de vie | Émissions de CO2 | Traffic routier |
 |---|---|---|---|
-| Échelle temporelle |---| constant | année | année |
-| Échelle géographique | ---| commune | national | département |
+| Échelle temporelle | constant | année | année |
+| Échelle géographique | commune | national | département |
 
 ## :card_index_dividers: Segmentation
 Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un fichier .gitinore et un fichier texte pour les requirements :
@@ -39,6 +39,16 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
 ├── CONTRIBUTING.md
 ├── .gitignore
 ├── requirements.txt 
+├── data 
+    ├── Emmision_1960-2021.csv
+    ├── ve_par_commune.csv
+    └── cluster
+        ├── CSV_Pop.csv
+        ├── CSV_ruralité.csv
+        ├── FRANCE_COMMUNE_NIVEAU_DE_VIE-FIGARO.csv
+        └── GEO_TER_ADE_centroide_communes_france.csv
+├── data_analysis.ipynb
+├── x.ipynb
 └── cluster
     ├── cluster_drawing.ipynb
     ├── clustering.py
@@ -49,6 +59,8 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
 - ``CONTRIBUTING.md`` contient l'ensemble des informations sur les normes et les pratiques de collaboration et de gestion du projet.
 - ``.gitignore`` contient les fichiers qui doivent être ignorés lors de l'ajout de fichiers au dépôt Git.
 - ``requirements.txt`` contient la liste des modules et des bibliothèques Python qui doivent être installés, ainsi que leur version spécifique.
+- ``data`` contient l'ensemble des données utilisées.
+- ``data_analysis.ipynb`` est le notebook pour l'analyse des données.
 - ``cluster`` est le dossier pour implémenter les clusters. Il comprend deux fichiers python et un notebook : ``rurality_pop.py`` permet d'agglomérer les bases de données,``clustering.py`` permet de créer les clusters autour des données et ``cluster_drawing.ipynb`` est le notebook python qui permet de visualiser les clusters.
 
 ## :wrench: Installation
