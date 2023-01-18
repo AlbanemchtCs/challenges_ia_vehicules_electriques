@@ -49,6 +49,7 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
         └── GEO_TER_ADE_centroide_communes_france.csv
 ├── data_analysis.ipynb
 ├── voitures_par_commune.ipynb
+├── regression.ipynb
 ├── trend.ipynb
 └── cluster
     ├── cluster_drawing.ipynb
@@ -63,7 +64,8 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
 - ``data`` contient l'ensemble des données utilisées.
 - ``data_analysis.ipynb`` est le notebook pour l'analyse des données.
 - ``voitures_par_commune.ipynb`` est le notebook pour générer le dataset des voitures électriques.
-- ``trend.ipynb`` est le notebook pour le modèle.
+- ``regression.ipynb`` est le notebook pour le modèle de régression.
+- ``trend.ipynb`` est le notebook pour un modèle essai d'une tendance polynomiale.
 - ``cluster`` est le dossier pour implémenter les clusters. Il comprend deux fichiers python et un notebook : ``rurality_pop.py`` permet d'agglomérer les bases de données,``clustering.py`` permet de créer les clusters autour des données et ``cluster_drawing.ipynb`` est le notebook python qui permet de visualiser les clusters.
 
 ## :wrench: Installation
@@ -104,7 +106,9 @@ Exécuter ensuite les notebooks python dans l'ordre suivant :
 
 3. voitures_par_commune.ipynb
 
-4. trend.ipynb
+4. regression.ipynb
+
+5. trend.ipynb
 
 
 ## :pencil2: Auteurs
