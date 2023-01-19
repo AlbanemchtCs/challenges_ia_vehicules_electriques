@@ -42,15 +42,28 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
 ├── data 
     ├── Emmision_1960-2021.csv
     ├── ve_par_commune.csv
-    └── cluster
+    ├── cluster
         ├── CSV_Pop.csv
         ├── CSV_ruralité.csv
         ├── FRANCE_COMMUNE_NIVEAU_DE_VIE-FIGARO.csv
         └── GEO_TER_ADE_centroide_communes_france.csv
+    └── data_bornes
+        ├── ElectriCite.xlsx
+        ├── VE-bornes.xlsx
+        ├── auchan_bornes.xlsx
+        ├── bornes-nissan.xlsx
+        ├── bornes-renault.xlsx
+        ├── bornes.csv
+        ├── bornes_cnr.csv
+        ├── communes-departement-region.csv
+        ├── e55-bornes.csv
+        ├── irve-bornes.csv
+        └── tesla-bornes.csv
 ├── data_analysis.ipynb
 ├── voitures_par_commune.ipynb
 ├── regression.ipynb
 ├── trend.ipynb
+├── data_bornes.ipynb
 └── cluster
     ├── cluster_drawing.ipynb
     ├── clustering.py
@@ -66,6 +79,7 @@ Notre répertoire est segmenté en X fichiers python, deux fichiers markdown, un
 - ``voitures_par_commune.ipynb`` est le notebook pour générer le dataset des voitures électriques.
 - ``regression.ipynb`` est le notebook pour le modèle de régression.
 - ``trend.ipynb`` est le notebook pour un modèle essai d'une tendance polynomiale.
+- ``data_bornes.ipynb`` est le notebook qui permet d'avoir la répartition des bornes de recharge en France par commune en 2023.
 - ``cluster`` est le dossier pour implémenter les clusters. Il comprend deux fichiers python et un notebook : ``rurality_pop.py`` permet d'agglomérer les bases de données,``clustering.py`` permet de créer les clusters autour des données et ``cluster_drawing.ipynb`` est le notebook python qui permet de visualiser les clusters.
 
 ## :wrench: Installation
@@ -109,6 +123,8 @@ Exécuter ensuite les notebooks python dans l'ordre suivant :
 4. regression.ipynb
 
 5. trend.ipynb
+
+6. data_bornes.ipynb
 
 
 ## :pencil2: Auteurs
